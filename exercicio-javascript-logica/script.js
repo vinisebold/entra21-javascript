@@ -99,25 +99,28 @@ function fabricaCamiseta() {
 
 /* 10. Construa um algoritmo para calcular a distância entre dois pontos do plano cartesiano. Cada
 ponto é um par ordenado (x,y). */
-function planoCartesiano() {
-    let
-}
+
+
+
 
 /* 11. Uma fábrica controla o tempo de trabalho sem acidentes pela quantidade de dias. Faça um
 algoritmo para converter este tempo em anos, meses e dias. Assuma que cada mês possui sempre
 30 dias. */
 function tempoTrabalho() {
-    let qntdDias = prompt("Qual a quantidade de dias sem acidentes de trabalho? ");
+    let totalDias = prompt("Qual a quantidade de dias sem acidentes de trabalho? ");
 
-    let converterMes = converterDias / 30;
-    let converterAno = qntdDias / 365;
+    let totalAnos = parseInt(totalDias / 360)
+    let restoAnos = parseInt(totalDias % 360)
 
-    if (converterAno < 1) {
-        converterAno = 'n/a'
-    }
+    let totalMeses = parseInt(restoAnos / 30)
+    let restoMeses = parseInt(restoAnos % 30)
 
-    alert("Tempo em anos: " + converterAno + " tempo em meses: " + converterMes + " tempo em dias: " + qntdDias);
+    let totalEmDias = parseInt(restoMeses)
+
+    alert("A quantidade  de anos foi: " + parseInt(totalAnos) + "\nA quantidade de emses foi: " + parseInt(totalMeses) + "\nA quantidade de dias foi: " + parseInt(totalDias))
 }
+
+  
 
 /* 12. Faça um algoritmo para ler o salário de um funcionário e aumentá-Io em 15%. Após o aumento,
 desconte 8% de impostos. Imprima o salário inicial, o salário com o aumento e o salário final. */
@@ -136,6 +139,10 @@ DEZENA = x
 UNIDADE = x */
 function numeroInteiro() {
     let numeroInteiro = prompt("Digite um número inteiro até três dígitos: ");
+
+    alert("CENTENA = " + numeroInteiro.substring(0,3))
+    alert("DEZENA = " + numeroInteiro.substring(0,2))
+    alert("UNIDADE = " + numeroInteiro.substring(0,1))
 }
 
 /* 14. Calcule a área de uma pizza que possui um raio R (pi=3.14) */
@@ -153,6 +160,48 @@ Carlos e André não paguem centavos. Ex: uma conta de R$101,53 resulta em R$33,
 Carlos, R$33,00 para André e R$35,53 para Felipe. */
 function contaBar() {
     let contaBar = prompt("Qual o valor da conta? ")
-    let semSentavos = Math.round(contaBar / 3)
-    alert("O valor da conta deu: " + semSentavos)
+    let semCentavos = Math.round(contaBar / 3)
+    let comCentavos = contaBar / 3;
+    alert("uma conta de " + contaBar + "resulta em R$" + semCentavos + "para Carlos, R$" +semCentavos + "para André e R$" + comCentavos + "para Felipe.")
 }
+
+/* 16. A lanchonete Gostosura vende apenas um tipo de sanduíche, cujo recheio inclui duas fatias de
+queijo, uma fatia de presunto e uma rodela de hambúrguer. Sabendo que cada fatia de queijo ou
+presunto pesa 50 gramas, e que a rodela de hambúrguer pesa 100 gramas, faça um algoritmo em
+que o dono forneça a quantidade de sanduíches a fazer, e a máquina informe as quantidades (em
+quilos) de queijo, presunto e carne necessários para compra. */
+function lanchonete() {
+    let quantiadadeHamburguer = prompt("Qual a quantidade de hamburguer?");
+    let queijoGramas = (2 * 50 * quantiadadeHamburguer) / 1000;
+    let presuntoGramas = (50 * quantiadadeHamburguer) / 1000;
+    let rodelaCarne = (100 * quantiadadeHamburguer) / 1000;
+    alert (queijoGramas + "kg de queijo, já de presunto deu " + presuntoGramas + "kg, e de rodela de hamburguer deu " + rodelaCarne + "kg");
+}
+
+/* 17. Alguns países medem temperaturas em graus Celsius, e outros em graus Fahrenheit. Faça um
+algoritmo para ler uma temperatura Celsius e imprimi-Ia em Fahrenheit (pesquise como fazer este
+tipo de conversão).*/
+function temperatura(){
+    let celsius = prompt("Qual a temperatura em °C?");
+    let fahrenheit = (celsius * 1.8) + 32;
+
+    alert("Temperatura convertida para Fahrenheit: " + fahrenheit + "°F");
+}
+
+/* 18. A empresa Hipotheticus paga R$10,00 por hora normal trabalhada, e R$15,00 por hora extra.
+Faça um algoritmo para calcular e imprimir o salário bruto e o salário líquido de um determinado
+funcionário. Considere que o salário líquido é igual ao salário bruto descontando-se 10% de
+impostos. */
+function salarioHoras(){
+    let horasTrabalho = prompt("Quantas horas trabalhadas? ");
+    let salarioBruto = horasTrabalho * 10;
+    let salarioLiquido = salarioBruto * 0.90;
+    alert("Salário Bruto: " + salarioBruto + "R$ Salário Líquido: " + salarioLiquido + "R$");
+}
+
+/* 19. A granja Frangotech possui um controle automatizado de cada frango da sua produção. No pé
+direito do frango há um anel com um chip de identificação; no pé esquerdo são dois anéis para
+indicar o tipo de alimento que ele deve consumir. Sabendo que o anel com chip custa R$4,00 e o
+anel de alimento custa R$3,50, faça um algoritmo para calcular o gasto total da granja para marcar
+todos os seus frangos. */
+

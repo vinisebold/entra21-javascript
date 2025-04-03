@@ -5,44 +5,393 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXERCÍCIOS DE ALGORITMOS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
-<body>
-    <h1>Exercícios de Algoritmos</h1>
-    <button onclick="terreno()"> 1. A imobiliária Imóbilis vende apenas terrenos retangulares. Faça um algoritmo para
-        ler as dimensões de um terreno e depois exibir a área do terreno. </button>
+<div class="container">
+    <h1 class="text-center my-4">Exercícios de Algoritmos</h1>
 
-    <button onclick="cavalos()">
-        2. Faça um algoritmo para calcular quantas ferraduras são necessárias para equipar todos
-        os cavalos comprados para um haras.</button>
+    <div class="row">
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="terreno()">
+                    <h5 class="card-title">1.</h5>
+                    <p class="card-text">A imobiliária Imóbilis vende apenas terrenos retangulares. Faça um algoritmo
+                        para ler as
+                        dimensões de um terreno e depois exibir a área do terreno.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="cavalos()">
+                    <h5 class="card-title">2.</h5>
+                    <p class="card-text">Faça um algoritmo para calcular quantas ferraduras são necessárias para equipar
+                        todos os
+                        cavalos comprados para um haras.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="padaria()">
+                    <h5 class="card-title">3.</h5>
+                    <p class="card-text">A padaria Hotpão vende uma certa quantidade de pães franceses e uma quantidade
+                        de broas a
+                        cada dia. Cada pãozinho custa R$ 0,12 e a broa custa R$ 1,50. Ao final do dia, o dono quer saber
+                        quanto arrecadou com a venda dos pães e broas (juntos), e quanto deve guardar numa conta de
+                        poupança (10% do total arrecadado). Você foi contratado para fazer os cálculos para o dono. Com
+                        base nestes fatos, faça um algoritmo para ler as quantidades de pães e de broas, e depois
+                        calcular
+                        os dados solicitados.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="diasVida()">
+                    <h5 class="card-title">4.</h5>
+                    <p class="card-text">Escreva um algoritmo para ler o nome e a idade de uma pessoa, e exibir quantos
+                        dias de vida
+                        ela possui. Considere sempre anos completos, e que um ano possui 365 dias. Ex: uma pessoa
+                        com 19 anos possui 6935 dias de vida; veja um exemplo de saída: MARIA, VOCÊ JÁ VIVEU 6935
+                        DIAS</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="gasolina()">
+                    <h5 class="card-title">5.</h5>
+                    <p class="card-text">Um motorista deseja colocar no seu tanque X reais de gasolina. Escreva um
+                        algoritmo para ler o
+                        preço do litro da gasolina e o valor do pagamento, e exibir quantos litros ele conseguiu colocar
+                        no
+                        tanque.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="restaurante()">
+                    <h5 class="card-title">6.</h5>
+                    <p class="card-text">O restaurante a quilo Bem-Bão cobra R$12,00 por cada quilo de refeição. Escreva
+                        um algoritmo
+                        que leia o peso do prato montado pelo cliente (em quilos) e imprima o valor a pagar. Assuma que
+                        a
+                        balança já desconte o peso do prato.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="quantosDias()">
+                    <h5 class="card-title">7.</h5>
+                    <p class="card-text">Entrar com o dia e o mês de uma data e informar quantos dias se passaram desde
+                        o início do
+                        ano. Esqueça a questão dos anos bissextos e considere sempre que um mês possui 30 dias.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="mediaAluno()">
+                    <h5 class="card-title">8.</h5>
+                    <p class="card-text">Faça um algoritmo para ler três notas de um aluno em uma disciplina e imprimir
+                        a sua média
+                        ponderada (as notas tem pesos respectivos de 1, 2 e 3).</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="fabricaCamiseta()">
+                    <h5 class="card-title">9.</h5>
+                    <p class="card-text">Uma fábrica de camisetas produz os tamanhos pequeno, médio e grande, cada uma
+                        sendo
+                        vendida respectivamente por 10, 12 e 15 reais. Construa um algoritmo em que o usuário forneça a
+                        quantidade de camisetas pequenas, médias e grandes referentes a uma venda, e a máquina
+                        informe quanto será o valor arrecadado.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="planoCartesiano()">
+                    <h5 class="card-title">10.</h5>
+                    <p class="card-text">Construa um algoritmo para calcular a distância entre dois pontos do plano
+                        cartesiano. Cada
+                        ponto é um par ordenado (x,y).</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="tempoTrabalho()">
+                    <h5 class="card-title">11.</h5>
+                    <p class="card-text">Uma fábrica controla o tempo de trabalho sem acidentes pela quantidade de dias.
+                        Faça um
+                        algoritmo para converter este tempo em anos, meses e dias. Assuma que cada mês possui sempre
+                        30 dias.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="salarioFuncionario()">
+                    <h5 class="card-title">12.</h5>
+                    <p class="card-text">Faça um algoritmo para ler o salário de um funcionário e aumentá-Io em 15%.
+                        Após o aumento,
+                        desconte 8% de impostos. Imprima o salário inicial, o salário com o aumento e o salário final.
+                    </p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="numeroInteiro()">
+                    <h5 class="card-title">13.</h5>
+                    <p class="card-text">Ler um número inteiro (assuma até três dígitos) e imprimir a saída da seguinte
+                        forma:
+                        <br>CENTENA = x
+                        <br>DEZENA = x
+                        <br>UNIDADE = x
+                    </p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="areaPizza()">
+                    <h5 class="card-title">14.</h5>
+                    <p class="card-text">Calcule a área de uma pizza que possui um raio R (pi=3.14).</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="contaBar()">
+                    <h5 class="card-title">15.</h5>
+                    <p class="card-text">Três amigos, Carlos, André e Felipe. decidiram rachar igualmente a conta de um
+                        bar. Faça um
+                        algoritmo para ler o valor total da conta e imprimir quanto cada um deve pagar, mas faça com que
+                        Carlos e André não paguem centavos. Ex: uma conta de R$101,53 resulta em R$33,00 para
+                        Carlos, R$33,00 para André e R$35,53 para Felipe.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="lanchonete()">
+                    <h5 class="card-title">16.</h5>
+                    <p class="card-text">A lanchonete Gostosura vende apenas um tipo de sanduíche, cujo recheio inclui
+                        duas fatias de
+                        queijo, uma fatia de presunto e uma rodela de hambúrguer. Sabendo que cada fatia de queijo ou
+                        presunto pesa 50 gramas, e que a rodela de hambúrguer pesa 100 gramas, faça um algoritmo em
+                        que o dono forneça a quantidade de sanduíches a fazer, e a máquina informe as quantidades (em
+                        quilos) de queijo, presunto e carne necessários para compra.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="temperatura()">
+                    <h5 class="card-title">17.</h5>
+                    <p class="card-text">Alguns países medem temperaturas em graus Celsius, e outros em graus
+                        Fahrenheit. Faça um
+                        algoritmo para ler uma temperatura Celsius e imprimi-Ia em Fahrenheit (pesquise como fazer este
+                        tipo de conversão).</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="salarioHoras()">
+                    <h5 class="card-title">18.</h5>
+                    <p class="card-text">A empresa Hipotheticus paga R$10,00 por hora normal trabalhada, e R$15,00 por
+                        hora extra.
+                        Faça um algoritmo para calcular e imprimir o salário bruto e o salário líquido de um determinado
+                        funcionário. Considere que o salário líquido é igual ao salário bruto descontando-se 10% de
+                        impostos.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="">
+                    <h5 class="card-title">19.</h5>
+                    <p class="card-text">A granja Frangotech possui um controle automatizado de cada frango da sua
+                        produção. No pé
+                        direito do frango há um anel com um chip de identificação; no pé esquerdo são dois anéis para
+                        indicar o tipo de alimento que ele deve consumir. Sabendo que o anel com chip custa R$4,00 e o
+                        anel de alimento custa R$3,50, faça um algoritmo para calcular o gasto total da granja para
+                        marcar
+                        todos os seus frangos.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="">
+                    <h5 class="card-title">20.</h5>
+                    <p class="card-text">Uma confecção produz X blusas de lã e para isto gasta uma certa quantidade de
+                        novelos. Faça
+                        um algoritmo para calcular quantos novelos de lã ela gasta por blusa.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title" onclick="">21.</h5>
+                    <p class="card-text">A fábrica de refrigerantes Meia-Cola vende seu produto em três formatos: lata
+                        de 350 ml,
+                        garrafa de 600 ml e garrafa de 2 litros. Se um comerciante compra uma determinada quantidade
+                        de cada formato, faça um algoritmo para calcular quantos litros de refrigerante ele comprou.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title" onclick="">22.</h5>
+                    <p class="card-text">Pedrinho tem um cofrinho com muitas moedas, e deseja saber quantos reais
+                        conseguiu
+                        poupar. Faça um algoritmo para ler a quantidade de cada tipo de moeda, e imprimir o valor total
+                        economizado, em reais. Considere que existam moedas de 1, 5, 10, 25 e 50 centavos, e ainda
+                        moedas de 1 real. Não havendo moeda de um tipo, a quantidade respectiva é zero.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title" onclick="">23.</h5>
+                    <p class="card-text">Num dia de sol, você deseja medir a altura de um prédio, porém, a trena não é
+                        suficientemente
+                        longa. Assumindo que seja possível medir sua sombra e a do prédio no chão, e que você lembre
+                        da sua altura, faça um algoritmo para ler os dados necessários e calcular a altura do prédio.
+                    </p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="">
+                    <h5 class="card-title">24.</h5>
+                    <p class="card-text">Um tonel de refresco é feito com 8 partes de água mineral e 2 partes de suco de
+                        maracujá.
+                        Faça um algoritmo para calcular quantos litros de água e de suco são necessários para se fazer X
+                        litros de refresco (informados pelo usuário).</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body" onclick="">
+                    <h5 class="card-title">25.</h5>
+                    <p class="card-text">Calcule o volume de uma caixa d'água cilíndrica.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">26.</h5>
+                    <p class="card-text">Faça um algoritmo que receba três números, calcule e mostre a multiplicação
+                        desses números.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">27.</h5>
+                    <p class="card-text">Faça um algoritmo que receba dois números, calcule e mostre a divisão do
+                        primeiro número
+                        pelo segundo. Sabe-se que o segundo número não pode ser zero, portanto não é necessário se
+                        preocupar com validações.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">28.</h5>
+                    <p class="card-text">Faça um algoritmo que receba duas notas, calcule e mostre a média ponderada
+                        dessas notas,
+                        considerando peso 2 para a primeira nota e peso 3 para a segunda nota.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">29.</h5>
+                    <p class="card-text">Faça um algoritmo que receba o preço de um produto, calcule e mostre o novo
+                        preço,
+                        sabendo-se que este sofreu um desconto de 10%.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">30.</h5>
+                    <p class="card-text">Um funcionário recebe um salário fixo mais 4% de comissão sobre as vendas. Faça
+                        um
+                        algoritmo que receba o salário fixo de um funcionário e o valor de suas vendas, calcule e mostre
+                        a
+                        comissão e o salário final do funcionário.</p>
+                    <a href="#" class="btn btn-primary">Resolver</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <button onclick="padaria()">
-        A padaria Hotpão vende uma certa quantidade de pães franceses e uma quantidade de broas
-        a cada dia. Cada pãozinho custa R$ 0,12 e a broa custa R$ 1,50. Ao final do dia, o dono quer saber quanto
-        arrecadou com a venda dos pães e broas (juntos), e quanto deve guardar numa conta de poupança (10% do total
-        arrecadado). Você foi contratado para fazer os cálculos para o dono. Com base nestes fatos, faça um algoritmo
-        para ler as quantidades de pães e de broas, e depois calcular os dados solicitados.</button>
-
-    <button onclick="contaBar()">
-        4. Escreva um algoritmo para ler o nome e a idade de uma pessoa, e exibir quantos dias de vida ela possui Considere sempre anos completos, e que um ano possui 365 dias. Ex: uma pessoa com 19 anos possui 6935 dias de vida; veja um exemplo de saída: MARIA, VOCÊ JÁ VIVEU 6935 DIAS</button>
-
-
-
-
-
-
-
-
-
-
-    <script src="/exercicio-javascript/exercicios-de-algoritmos/script.js"></script>
-
-
-
-
-
-
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+<!-- Verifique se o caminho para seu script está correto -->
+<script src="/exercicio-javascript-logica/script.js"></script>
 </body>
 
 </html>
