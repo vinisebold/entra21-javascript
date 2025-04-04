@@ -120,7 +120,7 @@ function tempoTrabalho() {
     alert("A quantidade  de anos foi: " + parseInt(totalAnos) + "\nA quantidade de emses foi: " + parseInt(totalMeses) + "\nA quantidade de dias foi: " + parseInt(totalDias))
 }
 
-  
+
 
 /* 12. Faça um algoritmo para ler o salário de um funcionário e aumentá-Io em 15%. Após o aumento,
 desconte 8% de impostos. Imprima o salário inicial, o salário com o aumento e o salário final. */
@@ -140,9 +140,9 @@ UNIDADE = x */
 function numeroInteiro() {
     let numeroInteiro = prompt("Digite um número inteiro até três dígitos: ");
 
-    alert("CENTENA = " + numeroInteiro.substring(0,3))
-    alert("DEZENA = " + numeroInteiro.substring(0,2))
-    alert("UNIDADE = " + numeroInteiro.substring(0,1))
+    alert("CENTENA = " + numeroInteiro.substring(0, 3))
+    alert("DEZENA = " + numeroInteiro.substring(0, 2))
+    alert("UNIDADE = " + numeroInteiro.substring(0, 1))
 }
 
 /* 14. Calcule a área de uma pizza que possui um raio R (pi=3.14) */
@@ -162,7 +162,7 @@ function contaBar() {
     let contaBar = prompt("Qual o valor da conta? ")
     let semCentavos = Math.round(contaBar / 3)
     let comCentavos = contaBar / 3;
-    alert("uma conta de " + contaBar + "resulta em R$" + semCentavos + "para Carlos, R$" +semCentavos + "para André e R$" + comCentavos + "para Felipe.")
+    alert("uma conta de " + contaBar + "resulta em R$" + semCentavos + "para Carlos, R$" + semCentavos + "para André e R$" + comCentavos + "para Felipe.")
 }
 
 /* 16. A lanchonete Gostosura vende apenas um tipo de sanduíche, cujo recheio inclui duas fatias de
@@ -175,13 +175,13 @@ function lanchonete() {
     let queijoGramas = (2 * 50 * quantiadadeHamburguer) / 1000;
     let presuntoGramas = (50 * quantiadadeHamburguer) / 1000;
     let rodelaCarne = (100 * quantiadadeHamburguer) / 1000;
-    alert (queijoGramas + "kg de queijo, já de presunto deu " + presuntoGramas + "kg, e de rodela de hamburguer deu " + rodelaCarne + "kg");
+    alert(queijoGramas + "kg de queijo, já de presunto deu " + presuntoGramas + "kg, e de rodela de hamburguer deu " + rodelaCarne + "kg");
 }
 
 /* 17. Alguns países medem temperaturas em graus Celsius, e outros em graus Fahrenheit. Faça um
 algoritmo para ler uma temperatura Celsius e imprimi-Ia em Fahrenheit (pesquise como fazer este
 tipo de conversão).*/
-function temperatura(){
+function temperatura() {
     let celsius = prompt("Qual a temperatura em °C?");
     let fahrenheit = (celsius * 1.8) + 32;
 
@@ -192,7 +192,7 @@ function temperatura(){
 Faça um algoritmo para calcular e imprimir o salário bruto e o salário líquido de um determinado
 funcionário. Considere que o salário líquido é igual ao salário bruto descontando-se 10% de
 impostos. */
-function salarioHoras(){
+function salarioHoras() {
     let horasTrabalho = prompt("Quantas horas trabalhadas? ");
     let salarioBruto = horasTrabalho * 10;
     let salarioLiquido = salarioBruto * 0.90;
@@ -204,4 +204,20 @@ direito do frango há um anel com um chip de identificação; no pé esquerdo s�
 indicar o tipo de alimento que ele deve consumir. Sabendo que o anel com chip custa R$4,00 e o
 anel de alimento custa R$3,50, faça um algoritmo para calcular o gasto total da granja para marcar
 todos os seus frangos. */
+function granjaFrango(){
+    let quantidadeFrangos = prompt("Qual a quantidade de frango na granja?");
+
+    let totalGranja = quantidadeFrangos * (4 + 3.50 + 3.50);
+    alert("O total gasto da granja para marcar todos os seus frangos foi: " + totalGranja + "R$");
+}
+
+/* 20. Uma confecção produz X blusas de lã e para isto gasta uma Y quantidade de novelos.
+Faça um algoritmo para calcular quantos novelos de lã ela gasta por blusa.*/
+function novelosLa(){
+    let quantidadeNovelos = prompt("Digite a quantidade de novelos: ")
+    let quantidadeBlusa =  prompt("Qual a quantidade de blusa produzida? ")
+
+    let novelosBlusa = Math.round(quantidadeNovelos / quantidadeBlusa)
+    alert(`Foram ${novelosBlusa} por blusa.`)
+}
 
