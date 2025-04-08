@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/exercicio-javascript-futebol/script.js"></script>
+    <link rel="stylesheet" href="/exercicio-javascript-futebol/style.css">
+</head>
+
+<body>
+    <div class="pergunta">
+        <h1>Encontre o Assasino</h1>
+        <p>Um crime foi cometido, você está sendo investigado. <br>Responda as questões com sinceridade e descubra qual
+            será o seu destino!</p>
+        <button onclick="encontreAssasino()">Iniciar Interrogatório</button>
+    </div>
+
+    <div class="pergunta">
+        <h1>Calcular o estoque médio de uma peça</h1>
+
+        <input id="estoqueAtual" type="number" placeholder="Seu estoque atual.."> <br><br>
+        <input id="quantidadeMinima" type="number" placeholder="Quantidade Minima.."> <br>
+        <input id="quantidadeMaxima" type="number" placeholder="Quantidade Maxima.."> <br><br>
+
+        <button onclick="estoque()">Calcular</button>
+    </div>
+
+    <div class="pergunta" style="height: 300px;">
+
+        <h1>Qual é turno você estuda?</h1>
+        <p class="dica">M - matutino V - vespertino N - noturno
+        </p><br><br>
+
+        <input id="turno" type="text" placeholder="Qual o seu turno?">
+
+        <button onclick="qualTurno()"> Clique </button>
+        <div id="resultado">
+        </div>
+    </div>
+
+</body>
+
+</html>
