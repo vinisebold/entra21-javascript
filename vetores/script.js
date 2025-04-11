@@ -112,6 +112,22 @@ function exercicioSeis() {
 }
 
 function exercicioSete() {
+    let vetorNum = [];
+    let numero = 0;
+
+    do {
+        numero = parseInt(prompt("(-1 para sair) Digite o número desejado: "));
+        if (numero != -1) {
+            vetorNum.push(numero);
+        }
+    } while (numero != -1);
+
+    let soma = 0;
+    for (let i = 0; i < vetorNum.length; i++) {
+        soma += vetorNum[i];
+    }
+    console.log(`A média é: ${soma / vetorNum.length}`);
+    alert(`A média dos números é: ${soma / vetorNum.length}`);
 
 }
 
